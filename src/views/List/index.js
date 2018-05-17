@@ -2,11 +2,10 @@ import React, { Component } from 'react';
 import './index.scss'
 
 class List extends Component {
-  render() {
-    console.log('this is a test');
+  render(){
     return (
-      <div className='test'>
-        <p>this is index-list</p>
+      <div className='list'>
+        <p>this is list</p>
       </div>
     )
   }
