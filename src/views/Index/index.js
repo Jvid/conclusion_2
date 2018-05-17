@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
-import './home.scss'
+import './index.scss'
 import first from '../../static/170.png'
 
-class Home extends Component {
+class Index extends Component {
   render(){
-    console.log('this is a test');
     return (
       <div className='test'>
-        <p>Hello world</p>
+        <p>this is index</p>
         <img src={first} />
       </div>
     )
   }
 }
 
-export default Home
+export default Index
