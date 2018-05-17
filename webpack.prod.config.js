@@ -48,12 +48,7 @@ module.exports = {
       },
       {
         test: /\.(png|gif|jpg|svg|jpeg)$/i,
-        use: {
-          loader: 'file-loader',
-          query: {
-            name: 'static/[hash].[ext]'
-          }
-        }
+        loader: "url-loader?limit=8192&name=static/[name].[hash:4].[ext]" 
       }
     ]
   },
