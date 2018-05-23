@@ -4,6 +4,7 @@ import { HashRouter as Router, Link } from 'react-router-dom'
 import { renderRoutes } from 'react-router-config'
 import SideBar from './src/components/sideBar.js'
 import ContnetRouter from './src/routes'
+import './index.scss'
 
 const routes = [
   ...ContnetRouter
@@ -11,9 +12,15 @@ const routes = [
 
 render(
   <Router>
-    <div>
-      <SideBar />
-      <div className="display">
+    <div className="wrap">
+      <div className="header-wrap">
+        <span className="logo"></span>
+        <span className='project-name'>conclution2.0</span>
+      </div>
+      <div className="sideBar-wrap">
+        <SideBar />
+      </div>
+      <div className="display-wrap">
         {renderRoutes(routes)}
       </div>
     </div>

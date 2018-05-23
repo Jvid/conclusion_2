@@ -1,13 +1,23 @@
 import React,{ Component } from 'react'
 import { Link } from 'react-router-dom'
-
+import list from '../static/contents'
+import './sideBar.scss'
 class SideBar extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      curHash: location.hash.substr(1)
+    }
+  }
   render() {
+    let curHash = this.state.curHash
     return (
-    <ul>
-      <li><Link to='/'>首页</Link></li>
-      <li><Link to='/home/code'>首页code</Link></li>
-      <li><Link to='/list'>列表</Link></li>
+    <ul className="side-list">
+      {
+        list.map((v,n) => (
+          <li className={`side-item ${curHash == v.action ? 'active-item' : ''}`} key={n.toString()}><Link to={v.action}>{v.name}</Link></li>
+        ))
+      }
     </ul>
     )
   }

@@ -1,0 +1,30 @@
+.side-list{
+  .side-item {
+    height: 25px;
+    line-height: 25px;
+    a{
+      text-decoration: none;
+      font-size: 14px;
+      color: #555;
+      &:hover{
+        color: royalblue;
+      }
+    }
+    &.active-item{
+      a{
+        color: royalblue;
+        position: relative;
+        &::before{
+          content: '';
+          display: block;
+          width: 5px;
+          height: 100%;
+          background: royalblue;
+          position: absolute;
+          left: -15px;
+          top: 0;
+        }
+      }
+    }
+  }
+}

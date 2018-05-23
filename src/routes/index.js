@@ -1,6 +1,5 @@
 import Home from '../views/Index'
-import IndexCode from '../views/ShowCode'
-import List from '../views/List'
+import Bling from '../views/Bling'
 
 const routes = [
   {
@@ -9,19 +8,9 @@ const routes = [
     component: Home
   },
   {
-    path: '/home',
+    path: '/bling',
     exact: true,
-    component: Home
-  },
-  {
-    path: '/home/code',
-    exact: true,
-    component: IndexCode
-  },
-  {
-    path: '/list',
-    exact: true,
-    component: List
+    component: Bling
   }
 ]
 export default routes
