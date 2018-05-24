@@ -3,7 +3,7 @@
 
 ```HTML
 <div class="img">
-	<img src="<%= require('../image/sky.jpg') %>" alt="">
+	<img src="../image/sky.jpg" alt="">
 </div>
 ```
 
