@@ -49,6 +49,10 @@ module.exports = {
       {
         test: /\.(png|gif|jpg|svg|jpeg)$/i,
         loader: "url-loader?limit=8192&name=static/[name].[hash:4].[ext]" 
+      },
+      {
+        test: /\.(md|string)$/i,
+        loader: 'raw-loader'
       }
     ]
   },

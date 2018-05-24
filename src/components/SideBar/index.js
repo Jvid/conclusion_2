@@ -1,7 +1,7 @@
 import React,{ Component } from 'react'
 import { Link } from 'react-router-dom'
-import list from '../static/contents'
-import './sideBar.scss'
+import list from '../../static/contents'
+import './index.scss'
 class SideBar extends Component {
   constructor(props) {
     super(props)

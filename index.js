@@ -2,7 +2,7 @@ import React from 'react'
 import { render } from 'react-dom'
 import { HashRouter as Router, Link } from 'react-router-dom'
 import { renderRoutes } from 'react-router-config'
-import SideBar from './src/components/sideBar.js'
+import SideBar from './src/components/SideBar'
 import ContnetRouter from './src/routes'
 import './index.scss'
 

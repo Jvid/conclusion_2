@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
+import CodeDisplay from '../../components/CodeDisplay'
 import './index.scss'
 import img from '../../static/bb.jpg'
+import md from './index.md'
 
-class List extends Component {
+
+class Bling extends Component {
   render(){
     return (
       <div className='bling'>
@@ -16,9 +19,10 @@ class List extends Component {
             <img src={img} alt="image" />
 				  </div>
         </div>
+        <CodeDisplay mdstr={md} />
       </div>
     )
   }
 }
 
-export default List
+export default Bling
