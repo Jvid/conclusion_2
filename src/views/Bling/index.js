@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CodeDisplay from '../../components/CodeDisplay'
+import Footer from '../../components/Footer'
 import './index.scss'
 import img from '../../static/bb.jpg'
 import md from './index.md'
@@ -20,6 +21,7 @@ class Bling extends Component {
 				  </div>
         </div>
         <CodeDisplay mdstr={md} />
+        {/* <Footer /> */}
       </div>
     )
   }

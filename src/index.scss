@@ -1,0 +1,66 @@
+@import './common/common.scss';
+@import './static/highlight.scss';
+@import './common/iconfont.css';
+html,body,#root,.wrap{
+  height: 100%;
+  width: 100%;
+}
+.header-wrap{
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  border-bottom: 1px solid #eee;
+  box-shadow: 3px 0 10px 0 rgba(0,0,0,0.1);
+  background: #fff;
+  position: fixed;
+  z-index: 5;
+  padding: 0 20px;
+  span{
+    display: inline-block;
+    vertical-align: top;
+  }
+  .logo{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    background: url('./static/170.png');
+    background-size: 100%;
+    margin-right: 20px;
+  }
+  .project-name{
+    font-size: 16px;
+    color: #333;
+  }
+}
+.content-wrap{
+  // overflow: hidden;
+  padding-top: 60px;
+  height: 100%;
+  min-width: 1000px;
+  box-sizing: border-box;
+  .content{
+    overflow: hidden;
+    min-height: calc( 100% - 200px );
+  }
+  .sideBar-wrap{
+    float: left;
+    width: 150px;
+    padding-top: 15px;
+    padding-bottom: 15000px;
+    margin-bottom: -15000px;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+  .display-wrap{
+    float: left;
+    width: calc( 100% - 150px );
+    min-width: 850px;
+    overflow: auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+}
+.code{
+  overflow: auto;
+}

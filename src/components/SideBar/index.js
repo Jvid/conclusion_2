@@ -1,6 +1,6 @@
 import React,{ Component } from 'react'
 import { Link } from 'react-router-dom'
-import list from '../../static/contents'
+import list from '../../routes/index'
 import './index.scss'
 class SideBar extends Component {
   constructor(props) {
@@ -19,7 +19,7 @@ class SideBar extends Component {
     <ul className="side-list">
       {
         list.map((v,n) => (
-          <li className={`side-item ${curHash == v.action ? 'active-item' : ''}`} key={n.toString()} onClick={this.changeHash}><Link to={v.action}>{v.name}</Link></li>
+          <li className={`side-item ${curHash == v.path ? 'active-item' : ''}`} key={n.toString()} onClick={this.changeHash}><Link to={v.path}>{v.name}</Link></li>
         ))
       }
     </ul>

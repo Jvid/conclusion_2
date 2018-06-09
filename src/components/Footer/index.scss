@@ -1,0 +1,30 @@
+.footer-wrap{
+	width: 100%;
+	height: 200px;
+	padding: 20px;
+	box-sizing: border-box;
+	background: #253546;
+	.w{
+		border: none;
+	}
+	.footer{
+		width: 200px;
+		float: left;
+		.footer-item{
+			height: 25px;
+			line-height: 25px;
+			color: #ccc;
+			font-size: 14px;
+			a{
+				color: #ccc;
+				text-decoration: none;
+				display: inline-block;
+				line-height: 25px;
+				font-size: 12px;
+				&:hover{
+					color: #fff;
+				}
+			}
+		}
+	}
+}
